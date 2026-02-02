@@ -23,23 +23,10 @@ I'm passionate about building robust tools for AI agents and developer workflows
 
 SDK for building AI-powered coding tools with support for chat sessions, streaming output, tool calls, and result handling. Open and manage coding sessions, interact with agents, and embed AI-assisted development into CLIs and applications.
 
-```rust
-// Open an opencode session
-let mut session = Client::connect("ws://localhost:8080").await?;
-let reply = session.chat("Help me refactor this code").await?;
-```
-
 ### [mcp-rust](https://github.com/caiuschou/mcp-rust)
 > A complete Rust implementation of the Model Context Protocol
 
 Production-ready MCP implementation with core types, server/client libraries, and reference implementations for GitHub, GitLab, and Zoekt. Features stdio/HTTP/WebSocket transports and comprehensive examples.
-
-```rust
-// MCP server in Rust - simple and type-safe
-let server = McpServer::new(ServerOptions::default())
-    .register_tool(my_tool)
-    .run_stdio()?;
-```
 
 ### [langgraph-rust](https://github.com/caiuschou/langgraph-rust)
 > Stateful agent framework with ReAct pattern
