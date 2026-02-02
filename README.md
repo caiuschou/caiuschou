@@ -18,6 +18,17 @@ I'm passionate about building robust tools for AI agents and developer workflows
 
 ## 🚀 What I'm Building
 
+### [opencode-sdk](https://github.com/caiuschou/opencode-sdk)
+> Rust SDK for integrating AI coding assistants
+
+SDK for building AI-powered coding tools with support for chat sessions, streaming output, tool calls, and result handling. Open and manage coding sessions, interact with agents, and embed AI-assisted development into CLIs and applications.
+
+```rust
+// Open an opencode session
+let mut session = Client::connect("ws://localhost:8080").await?;
+let reply = session.chat("Help me refactor this code").await?;
+```
+
 ### [mcp-rust](https://github.com/caiuschou/mcp-rust)
 > A complete Rust implementation of the Model Context Protocol
 
@@ -69,6 +80,7 @@ Demonstrates how to structure a Rust system with shared core and dedicated serve
 
 | Project | Stars | Language | Description |
 |---------|-------|----------|-------------|
+| [opencode-sdk](https://github.com/caiuschou/opencode-sdk) | ![GitHub stars](https://img.shields.io/github/stars/caiuschou/opencode-sdk?style=social) | Rust | AI coding assistant SDK |
 | [mcp-rust](https://github.com/caiuschou/mcp-rust) | ![GitHub stars](https://img.shields.io/github/stars/caiuschou/mcp-rust?style=social) | Rust | Model Context Protocol implementation |
 | [langgraph-rust](https://github.com/caiuschou/langgraph-rust) | ![GitHub stars](https://img.shields.io/github/stars/caiuschou/langgraph-rust?style=social) | Rust | Stateful agent framework |
 | [telegram-bot](https://github.com/caiuschou/telegram-bot) | ![GitHub stars](https://img.shields.io/github/stars/caiuschou/telegram-bot?style=social) | Rust | Intelligent Telegram bot |
